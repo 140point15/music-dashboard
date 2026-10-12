@@ -388,6 +388,34 @@
         .modal-rating-container { display: flex; flex-direction: column; gap: 2px; }
         .modal-stars { color: var(--accent-color); font-size: 0.95rem; letter-spacing: 1px; }
         .modal-text-rating { color: var(--accent-color); font-weight: bold; font-size: 0.8rem; letter-spacing: 0.5px; }
+
+/* --- MOBILE RESPONSIVENESS FIXES --- */
+@media screen and (max-width: 768px) {
+  /* Stack the main header and nav tabs vertically so they don't crowd */
+  header, .header-container, .nav-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  /* Make tab buttons wrap nicely and fit the screen width */
+  .nav-tabs, .tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* Hide keyboard-only instructions on mobile screens */
+  .desktop-shortcut-hint, 
+  span:has-text("PRESS 'M'") {
+    display: none !important;
+  }
+
+  /* Ensure statistic cards and grids scale to full width */
+  .stats-grid, .card-container {
+    grid-template-columns: 1fr !important;
+  }
+}
     </style>
 </head>
 <body>
@@ -438,7 +466,7 @@
         <div id="view-calendar" class="view-panel">
             <div class="calendar-controls">
                 <div class="mode-indicator" id="modeIndicator">
-                    Navigation Mode: <span id="modeText">Day-by-Day (Press 'M' to toggle Month Mode)</span>
+                    
                 </div>
                 <button class="sort-btn" id="sortToggleBtn">Sort: Chronological</button>
             </div>
