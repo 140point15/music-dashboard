@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Hi-Fi Music Log Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --text-muted: #888;
+            --border-color: #333;
+            --accent-color: #ffb703;
+            --alert-red: #d93838;
+            --success-green: #2e7d32;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-wrapper {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* CUSTOM DARK SCROLLBAR FOR ALL SCROLLABLE CONTAINERS */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--card-bg);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-color);
+        }
+
+        /* TAB NAVIGATION HEADER */
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+        }
+
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        .tab-btn {
+            background-color: var(--card-bg);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.1s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-color);
+            border-color: var(--accent-color);
+        }
+
+        .tab-btn.active {
+            background-color: var(--accent-color);
+            color: #121212;
+            border-color: var(--accent-color);
+        }
+
+        .view-panel {
+            display: none;
+        }
+
+        .view-panel.active {
+            display: block;
+        }
+
+        /* DASHBOARD VIEWS ("THE BIG ONE") */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-card .label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin-top: 8px;
+        }
+
+        .status-banner {
+            padding: 16px 20px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        .status-banner.done {
+            background-color: #1b2e1e;
+            border: 1px solid var(--success-green);
+            color: #81c784;
+        }
+
+        .status-banner.pending {
+            background-color: #3a1c1c;
+            border: 1px solid var(--alert-red);
+            color: #ff8a80;
+        }
+
+        .progress-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 10px;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background-color: var(--accent-color);
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        /* CALENDAR VIEW (YOUR EXACT ORIGINAL STYLING) */
+        .calendar-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .mode-indicator {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .mode-indicator span {
+            color: var(--accent-color);
+            padding: 3px 8px;
+            background: #252525;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .sort-btn {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: border-color 0.1s ease, background-color 0.1s ease;
+        }
+
+        .sort-btn:hover {
+            border-color: var(--accent-color);
+            background-color: #252525;
+        }
+
+        .calendar-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+        }
+
+        .month-section {
+            transition: border-color 0.2s ease;
+            border-radius: 6px;
+            padding: 4px;
+        }
+
+        .month-section.month-mode-active h2 {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        .month-section h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            color: var(--text-muted);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .day-box {
+            aspect-ratio: 1;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.1s ease, border-color 0.1s ease;
+        }
+
+        .day-box:hover, .day-box.keyboard-selected {
+            border-color: var(--accent-color);
+            transform: scale(1.03);
+            z-index: 10;
+            outline: none;
+        }
+
+        .day-box.empty {
+            background-color: transparent;
+            border: 1px dashed rgba(255, 255, 255, 0.05);
+            cursor: default;
+        }
+
+        .day-box.empty:hover, .day-box.empty.keyboard-selected {
+            transform: none;
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .day-number {
+            position: absolute;
+            top: 4px;
+            left: 6px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1px 4px;
+            border-radius: 3px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .single-album img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .double-album {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .album-triangle-1 {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        .album-triangle-2 {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+
+        .album-triangle-1 img, .album-triangle-2 img {
+            width: 100%; height: 100%; object-fit: cover;
+            position: absolute; top: 0; left: 0;
+        }
+
+        /* MODAL OVERLAY */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px; right: 15px;
+            background: none; border: none;
+            color: var(--text-muted); font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .modal-close:hover { color: var(--text-color); }
+
+        .modal-album {
+            display: flex; gap: 15px; align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+        .modal-album:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .modal-album img {
+            width: 90px; height: 90px; object-fit: cover;
+            border-radius: 4px; flex-shrink: 0;
+        }
+
+        .modal-info h3 { margin: 0 0 3px 0; font-size: 1.05rem; }
+        .modal-info p { margin: 0 0 6px 0; color: var(--text-muted); font-size: 0.85rem; }
+
+        .modal-rating-container { display: flex; flex-direction: column; gap: 2px; }
+        .modal-stars { color: var(--accent-color); font-size: 0.95rem; letter-spacing: 1px; }
+        .modal-text-rating { color: var(--accent-color); font-weight: bold; font-size: 0.8rem; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="app-header">
+            <h1>Hi-Fi Music Log</h1>
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="switchTab('dashboard')">Dashboard</button>
+                <button class="tab-btn" onclick="switchTab('calendar')">Calendar</button>
+                <button class="tab-btn" onclick="switchTab('scores')">Scores</button>
+                <button class="tab-btn" onclick="switchTab('decades')">Decades</button>
+                <button class="tab-btn" onclick="switchTab('artists')">Artists</button>
+            </div>
+        </div>
+
+        <!-- VIEW 1: DASHBOARD ("THE BIG ONE") -->
+        <div id="view-dashboard" class="view-panel active">
+            <div id="status-banner" class="status-banner pending">Checking today's log status...</div>
+            
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div class="label">2026 Albums</div>
+                    <div class="value" id="stat-albums">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">2026 Songs</div>
+                    <div class="value" id="stat-songs">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">2026 Artists</div>
+                    <div class="value" id="stat-artists">0</div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span id="progress-date-text">Year Progress</span>
+                    <span id="progress-pct-text">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: CALENDAR (EXACT WORKING CODE) -->
+        <div id="view-calendar" class="view-panel">
+            <div class="calendar-controls">
+                <div class="mode-indicator" id="modeIndicator">
+                    Navigation Mode: <span id="modeText">Day-by-Day (Press 'M' to toggle Month Mode)</span>
+                </div>
+                <button class="sort-btn" id="sortToggleBtn">Sort: Chronological</button>
+            </div>
+
+            <div class="calendar-container" id="calendarContainer">Loading listens...</div>
+        </div>
+
+        <!-- VIEW 3: SCORES DISTRIBUTION -->
+        <div id="view-scores" class="view-panel">
+            <div class="progress-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2 style="font-size: 1.2rem; margin: 0; color: var(--text-color);">Score Distribution</h2>
+                    <div id="avg-rating-badge" style="font-size: 0.9rem; font-weight: bold; color: var(--accent-color); background: #252525; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border-color);">
+                        Average: -- ★
+                    </div>
+                </div>
+                <div id="scores-container" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            </div>
+        </div>
+
+        <!-- VIEW 4: DECADES DISTRIBUTION -->
+        <div id="view-decades" class="view-panel">
+            <div class="progress-section">
+                <h2 style="font-size: 1.2rem; margin: 0 0 20px 0; color: var(--text-color);">Release Decade Distribution</h2>
+                <div id="decades-container" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            </div>
+        </div>
+
+        <!-- VIEW 5: ARTIST LEADERBOARD (OPTION B LAYOUT) -->
+        <div id="view-artists" class="view-panel">
+            <div class="progress-section">
+                <h2 style="font-size: 1.2rem; margin: 0 0 20px 0; color: var(--text-color);">Artist Leaderboard (Most Albums)</h2>
+                <div id="artists-container" style="display: flex; flex-direction: column; gap: 14px; max-height: 600px; overflow-y: auto; padding-right: 4px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for viewing album details -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- LINKED DIRECTLY TO YOUR DATA FILE -->
+    <script src="music-data.js?v=3"></script>
+
+    <script>
+        let isNewestFirst = false;
+        let selectedDayIndex = 0;
+        let isMonthNavigationMode = false;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (typeof window.musicLogs !== 'undefined') {
+                renderDashboardStats();
+                renderCalendar();
+            } else {
+                console.warn("music-data.js not loaded yet. Retrying in 500ms...");
+                setTimeout(() => {
+                    if (typeof window.musicLogs !== 'undefined') {
+                        renderDashboardStats();
+                        renderCalendar();
+                    } else {
+                        document.getElementById('status-banner').innerText = "Error: Could not load music-data.js !";
+                    }
+                }, 500);
+            }
+            
+            const sortBtn = document.getElementById('sortToggleBtn');
+            if (sortBtn) {
+                sortBtn.addEventListener('click', () => {
+                    toggleSortOrder();
+                });
+            }
+
+            setupKeyboardNavigation();
+        });
+
+        // Tab Switcher
+        function switchTab(tabKey) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.view-panel').forEach(panel => panel.classList.remove('active'));
+
+            const btns = document.querySelectorAll('.tab-btn');
+
+            if (tabKey === 'dashboard') {
+                btns[0].classList.add('active');
+                document.getElementById('view-dashboard').classList.add('active');
+                renderDashboardStats();
+            } else if (tabKey === 'calendar') {
+                btns[1].classList.add('active');
+                document.getElementById('view-calendar').classList.add('active');
+            } else if (tabKey === 'scores') {
+                btns[2].classList.add('active');
+                document.getElementById('view-scores').classList.add('active');
+                renderScoreDistribution();
+            } else if (tabKey === 'decades') {
+                btns[3].classList.add('active');
+                document.getElementById('view-decades').classList.add('active');
+                renderDecadesDistribution();
+            } else if (tabKey === 'artists') {
+                btns[4].classList.add('active');
+                document.getElementById('view-artists').classList.add('active');
+                renderArtistLeaderboard();
+            }
+        }
+
+        // Dashboard Calculation Logic
+        function renderDashboardStats() {
+            const logs = window.musicLogs || [];
+            
+            const logs2026 = logs.filter(item => {
+                const dStr = item.listenDate || '';
+                return dStr.endsWith('/2026');
+            });
+
+            const totalAlbums = logs2026.length;
+            const totalSongs = logs2026.reduce((acc, curr) => acc + (Number(curr.trackCount) || 0), 0);
+            
+            const uniqueArtists = new Set(logs2026.map(item => {
+                const parts = (item.title || "").split(' - ');
+                return parts.length > 1 ? parts[0].trim() : "Unknown";
+            })).size;
+
+            document.getElementById('stat-albums').innerText = totalAlbums;
+            document.getElementById('stat-songs').innerText = totalSongs;
+            document.getElementById('stat-artists').innerText = uniqueArtists;
+
+            const today = new Date();
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const todayStr = `${dd}/${mm}/2026`;
+
+            const loggedToday = logs2026.some(item => item.listenDate === todayStr);
+            const banner = document.getElementById('status-banner');
+
+            if (loggedToday) {
+                banner.className = "status-banner done";
+                banner.innerText = "✓ Today's Album Logged!";
+            } else {
+                banner.className = "status-banner pending";
+                banner.innerText = "⚠️ NO ALBUM LOGGED TODAY — REMINDER TO LISTEN";
+            }
+
+            const start = new Date(2026, 0, 1);
+            const diff = today - start;
+            const oneDay = 1000 * 60 * 60 * 24;
+            const dayOfYear = Math.floor(diff / oneDay);
+            const pct = Math.min(100, Math.max(0, ((dayOfYear / 365) * 100).toFixed(1)));
+
+            document.getElementById('progress-fill').style.width = pct + '%';
+            document.getElementById('progress-pct-text').innerText = pct + '%';
+            document.getElementById('progress-date-text').innerText = `Year Progress (Day ${dayOfYear} of 365)`;
+        }
+
+        // Score Distribution Logic
+        function renderScoreDistribution() {
+            const container = document.getElementById('scores-container');
+            container.innerHTML = '';
+
+            const logs = window.musicLogs || [];
+            if (logs.length === 0) {
+                container.innerHTML = '<p style="color: var(--text-muted);">No logs found.</p>';
+                return;
+            }
+
+            const ratingKeys = [5.0, 4.5, 4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1.0, 0.5];
+            const counts = {};
+            ratingKeys.forEach(r => counts[r] = 0);
+
+            let totalScoreSum = 0;
+            let scoredCount = 0;
+
+            logs.forEach(log => {
+                if (!log.description) return;
+                const match = log.description.match(/Rating:\s*([0-9.]+)/);
+                if (match) {
+                    const num = parseFloat(match[1]);
+                    if (!isNaN(num)) {
+                        const closestKey = ratingKeys.reduce((prev, curr) => 
+                            Math.abs(curr - num) < Math.abs(prev - num) ? curr : prev
+                        );
+                        counts[closestKey]++;
+                        totalScoreSum += num;
+                        scoredCount++;
+                    }
+                }
+            });
+
+            const avgScore = scoredCount > 0 ? (totalScoreSum / scoredCount).toFixed(2) : "N/A";
+            document.getElementById('avg-rating-badge').innerText = `Average: ${avgScore} ★`;
+
+            const maxCount = Math.max(...Object.values(counts), 1);
+
+            ratingKeys.forEach(rKey => {
+                const count = counts[rKey];
+                const pct = ((count / maxCount) * 100).toFixed(1);
+                const dummyDesc = `Rating: ${rKey.toFixed(1)}`;
+                const starData = formatRatingToStars(dummyDesc);
+
+                const row = document.createElement('div');
+                row.style.cssText = 'display: flex; align-items: center; gap: 12px; font-size: 0.85rem;';
+
+                row.innerHTML = `
+                    <div style="width: 140px; font-weight: 600; color: var(--accent-color); font-size: 0.85rem; flex-shrink: 0; white-space: nowrap;">
+                        ${starData.stars} <span style="color: var(--text-muted); font-weight: normal; font-size: 0.75rem;">${starData.textLabel}</span>
+                    </div>
+                    <div style="flex-grow: 1; background: #2a2a2a; height: 16px; border-radius: 4px; overflow: hidden; position: relative;">
+                        <div style="width: ${pct}%; background: var(--accent-color); height: 100%; transition: width 0.4s ease;"></div>
+                    </div>
+                    <div style="width: 45px; text-align: right; font-weight: bold; color: var(--text-color); font-size: 0.85rem; flex-shrink: 0;">
+                        ${count}
+                    </div>
+                `;
+
+                container.appendChild(row);
+            });
+        }
+
+        // Decades Distribution Logic
+        function renderDecadesDistribution() {
+            const container = document.getElementById('decades-container');
+            container.innerHTML = '';
+
+            const logs = window.musicLogs || [];
+            if (logs.length === 0) {
+                container.innerHTML = '<p style="color: var(--text-muted);">No logs found.</p>';
+                return;
+            }
+
+            const decadeKeys = ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s", "2020s"];
+            const counts = {};
+            decadeKeys.forEach(d => counts[d] = 0);
+
+            logs.forEach(log => {
+                const yr = parseInt(log.releaseYear, 10);
+                if (!isNaN(yr)) {
+                    if (yr >= 1960 && yr < 1970) counts["1960s"]++;
+                    else if (yr >= 1970 && yr < 1980) counts["1970s"]++;
+                    else if (yr >= 1980 && yr < 1990) counts["1980s"]++;
+                    else if (yr >= 1990 && yr < 2000) counts["1990s"]++;
+                    else if (yr >= 2000 && yr < 2010) counts["2000s"]++;
+                    else if (yr >= 2010 && yr < 2020) counts["2010s"]++;
+                    else if (yr >= 2020 && yr < 2030) counts["2020s"]++;
+                }
+            });
+
+            const maxCount = Math.max(...Object.values(counts), 1);
+
+            decadeKeys.forEach(decade => {
+                const count = counts[decade];
+                const pct = ((count / maxCount) * 100).toFixed(1);
+
+                const row = document.createElement('div');
+                row.style.cssText = 'display: flex; align-items: center; gap: 12px; font-size: 0.85rem;';
+
+                row.innerHTML = `
+                    <div style="width: 80px; font-weight: 600; color: var(--accent-color); font-size: 0.85rem; flex-shrink: 0; white-space: nowrap;">
+                        ${decade}
+                    </div>
+                    <div style="flex-grow: 1; background: #2a2a2a; height: 16px; border-radius: 4px; overflow: hidden; position: relative;">
+                        <div style="width: ${pct}%; background: var(--accent-color); height: 100%; transition: width 0.4s ease;"></div>
+                    </div>
+                    <div style="width: 45px; text-align: right; font-weight: bold; color: var(--text-color); font-size: 0.85rem; flex-shrink: 0;">
+                        ${count}
+                    </div>
+                `;
+
+                container.appendChild(row);
+            });
+        }
+
+        // Artist Leaderboard Logic (Option B: Name & stats stacked on left, clean progress bar spanning the rest)
+        function renderArtistLeaderboard() {
+            const container = document.getElementById('artists-container');
+            container.innerHTML = '';
+
+            const logs = window.musicLogs || [];
+            if (logs.length === 0) {
+                container.innerHTML = '<p style="color: var(--text-muted);">No logs found.</p>';
+                return;
+            }
+
+            const artistMap = {};
+
+            logs.forEach(log => {
+                const parts = (log.title || "").split(' - ');
+                const artist = parts.length > 1 ? parts[0].trim() : "Unknown Artist";
+                
+                if (!artistMap[artist]) {
+                    artistMap[artist] = { count: 0, scoreSum: 0, scoredCount: 0 };
+                }
+                artistMap[artist].count++;
+
+                if (log.description) {
+                    const match = log.description.match(/Rating:\s*([0-9.]+)/);
+                    if (match) {
+                        const num = parseFloat(match[1]);
+                        if (!isNaN(num)) {
+                            artistMap[artist].scoreSum += num;
+                            artistMap[artist].scoredCount++;
+                        }
+                    }
+                }
+            });
+
+            const sortedArtists = Object.keys(artistMap).map(artist => {
+                const data = artistMap[artist];
+                const avgRating = data.scoredCount > 0 ? (data.scoreSum / data.scoredCount).toFixed(1) : "N/A";
+                return { artist, count: data.count, avgRating };
+            }).sort((a, b) => b.count - a.count);
+
+            const maxCount = sortedArtists.length > 0 ? sortedArtists[0].count : 1;
+
+            sortedArtists.forEach((item, index) => {
+                const pct = ((item.count / maxCount) * 100).toFixed(1);
+
+                const row = document.createElement('div');
+                row.style.cssText = 'display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.04); border-radius: 6px;';
+
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem;">
+                        <div style="font-weight: 600; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--text-muted); font-size: 0.75rem; font-weight: normal; width: 24px;">#${index + 1}</span>
+                            <span>${item.artist}</span>
+                        </div>
+                        <div style="display: flex; gap: 16px; font-size: 0.8rem;">
+                            <span style="color: var(--accent-color); font-weight: 600;">⭐ ${item.avgRating}</span>
+                            <span style="color: var(--text-muted);">${item.count} album${item.count === 1 ? '' : 's'}</span>
+                        </div>
+                    </div>
+                    <div style="background: #2a2a2a; height: 10px; border-radius: 5px; overflow: hidden; width: 100%;">
+                        <div style="width: ${pct}%; background: var(--accent-color); height: 100%; transition: width 0.4s ease;"></div>
+                    </div>
+                `;
+
+                container.appendChild(row);
+            });
+        }
+
+        // Calendar Logic (Exact working code - UNTOUCHED)
+        function toggleSortOrder() {
+            isNewestFirst = !isNewestFirst;
+            const sortBtn = document.getElementById('sortToggleBtn');
+            if (sortBtn) {
+                sortBtn.textContent = isNewestFirst ? "Sort: Newest First" : "Sort: Chronological";
+            }
+            renderCalendar();
+        }
+
+        function formatRatingToStars(ratingStr) {
+            if (!ratingStr) return { stars: "★★★★★", textLabel: "" };
+            let match = ratingStr.match(/Rating:\s*([0-9.]+)/);
+            if (!match) return { stars: ratingStr, textLabel: "" };
+            
+            let num = parseFloat(match[1]);
+            if (isNaN(num)) return { stars: ratingStr, textLabel: "" };
+
+            let stars = "";
+            let label = "";
+
+            if (num === 0.5) { stars = "½"; label = "HATE IT"; }
+            else if (num === 1.0) { stars = "★"; label = "DISLIKE"; }
+            else if (num === 1.5) { stars = "★½"; label = "NOT GOOD"; }
+            else if (num === 2.0) { stars = "★★"; label = "OKAY"; }
+            else if (num === 2.5) { stars = "★★½"; label = "DECENT"; }
+            else if (num === 3.0) { stars = "★★★"; label = "GOOD"; }
+            else if (num === 3.5) { stars = "★★★½"; label = "REALLY GOOD"; }
+            else if (num === 4.0) { stars = "★★★★"; label = "GREAT"; }
+            else if (num === 4.5) { stars = "★★★★½"; label = "AMAZING"; }
+            else if (num === 5.0) { stars = "★★★★★"; label = "ALL TIMER"; }
+            else {
+                let full = Math.floor(num);
+                let half = (num % 1) >= 0.5;
+                stars = "★".repeat(full) + (half ? "½" : "");
+                label = "";
+            }
+
+            return { stars: stars, textLabel: `— ${label}` };
+        }
+
+        function renderCalendar() {
+            const container = document.getElementById('calendarContainer');
+            if (!container) return;
+            container.innerHTML = '';
+
+            let logs = [...window.musicLogs];
+
+            logs.sort((a, b) => {
+                const parseDate = (dStr) => {
+                    if (!dStr) return 0;
+                    const parts = dStr.split('/');
+                    if (parts.length !== 3) return 0;
+                    return parseInt(`${parts[2]}${parts[1]}${parts[0]}`, 10);
+                };
+                return isNewestFirst ? parseDate(b.listenDate) - parseDate(a.listenDate) : parseDate(a.listenDate) - parseDate(b.listenDate);
+            });
+
+            const logsByDate = {};
+            logs.forEach(log => {
+                if (!logsByDate[log.listenDate]) {
+                    logsByDate[log.listenDate] = [];
+                }
+                logsByDate[log.listenDate].push(log);
+            });
+
+            const monthsMap = {};
+            logs.forEach(log => {
+                const parts = log.listenDate.split('/');
+                if (parts.length === 3) {
+                    const monthYearKey = `${parts[1]}-${parts[2]}`;
+                    if (!monthsMap[monthYearKey]) {
+                        monthsMap[monthYearKey] = { month: parseInt(parts[1]), year: parseInt(parts[2]) };
+                    }
+                }
+            });
+
+            const sortedMonths = Object.values(monthsMap).sort((a, b) => {
+                if (a.year !== b.year) {
+                    return isNewestFirst ? b.year - a.year : a.year - b.year;
+                }
+                return isNewestFirst ? b.month - a.month : a.month - b.month;
+            });
+
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            sortedMonths.forEach(mObj => {
+                const monthSection = document.createElement('div');
+                monthSection.className = 'month-section';
+                monthSection.dataset.monthYear = `${mObj.month}-${mObj.year}`;
+
+                const h2 = document.createElement('h2');
+                h2.textContent = `${monthNames[mObj.month - 1]} ${mObj.year}`;
+                monthSection.appendChild(h2);
+
+                const grid = document.createElement('div');
+                grid.className = 'days-grid';
+
+                const daysInMonth = new Date(mObj.year, mObj.month, 0).getDate();
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const dayStr = String(day).padStart(2, '0');
+                    const monthStr = String(mObj.month).padStart(2, '0');
+                    const dateKey = `${dayStr}/${monthStr}/${mObj.year}`;
+
+                    const box = document.createElement('div');
+                    box.className = 'day-box';
+                    box.dataset.dateKey = dateKey;
+                    box.dataset.monthYear = `${mObj.month}-${mObj.year}`;
+
+                    const dayNumLabel = document.createElement('span');
+                    dayNumLabel.className = 'day-number';
+                    dayNumLabel.textContent = day;
+                    box.appendChild(dayNumLabel);
+
+                    const dayListens = logsByDate[dateKey] || [];
+
+                    if (dayListens.length === 0) {
+                        box.classList.add('empty');
+                    } else if (dayListens.length === 1) {
+                        box.classList.add('single-album');
+                        const img = document.createElement('img');
+                        img.src = dayListens[0].cover || '';
+                        img.alt = dayListens[0].title;
+                        box.appendChild(img);
+
+                        box.addEventListener('click', () => showModal(dayListens));
+                        box.dataset.hasListens = "true";
+                        box._dayListens = dayListens;
+                    } else {
+                        box.classList.add('double-album');
+
+                        const tri1 = document.createElement('div');
+                        tri1.className = 'album-triangle-1';
+                        const img1 = document.createElement('img');
+                        img1.src = dayListens[0].cover || '';
+                        tri1.appendChild(img1);
+
+                        const tri2 = document.createElement('div');
+                        tri2.className = 'album-triangle-2';
+                        const img2 = document.createElement('img');
+                        img2.src = dayListens[1].cover || '';
+                        tri2.appendChild(img2);
+
+                        box.appendChild(tri1);
+                        box.appendChild(tri2);
+
+                        box.addEventListener('click', () => showModal(dayListens));
+                        box.dataset.hasListens = "true";
+                        box._dayListens = dayListens;
+                    }
+
+                    grid.appendChild(box);
+                }
+
+                monthSection.appendChild(grid);
+                container.appendChild(monthSection);
+            });
+
+            updateSelectedDayVisual();
+        }
+
+        function setupKeyboardNavigation() {
+            document.addEventListener('keydown', (e) => {
+                const dayBoxes = Array.from(document.querySelectorAll('.day-box'));
+                if (dayBoxes.length === 0) return;
+
+                const modalOverlay = document.getElementById('modalOverlay');
+                const isModalActive = modalOverlay && modalOverlay.classList.contains('active');
+
+                if (e.key.toLowerCase() === 's' && !isModalActive) {
+                    e.preventDefault();
+                    toggleSortOrder();
+                    return;
+                }
+
+                if (e.key.toLowerCase() === 'm' && !isModalActive) {
+                    e.preventDefault();
+                    isMonthNavigationMode = !isMonthNavigationMode;
+                    
+                    const modeText = document.getElementById('modeText');
+                    if (modeText) {
+                        modeText.textContent = isMonthNavigationMode ? 
+                            "Month Navigation Mode (Dial left/right skips months)" : 
+                            "Day-by-Day Mode (Press 'M' to toggle Month Mode)";
+                    }
+                    updateSelectedDayVisual();
+                    return;
+                }
+
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    if (!isModalActive) {
+                        if (isMonthNavigationMode) {
+                            jumpToAdjacentMonth(1, dayBoxes);
+                        } else {
+                            selectedDayIndex = (selectedDayIndex + 1) % dayBoxes.length;
+                            updateSelectedDayVisual();
+                        }
+                    }
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    if (!isModalActive) {
+                        if (isMonthNavigationMode) {
+                            jumpToAdjacentMonth(-1, dayBoxes);
+                        } else {
+                            selectedDayIndex = (selectedDayIndex - 1 + dayBoxes.length) % dayBoxes.length;
+                            updateSelectedDayVisual();
+                        }
+                    }
+                } else if (e.key === 'Enter') {
+                    e.preventDefault();
+                    if (isModalActive) {
+                        modalOverlay.classList.remove('active');
+                    } else {
+                        const currentBox = dayBoxes[selectedDayIndex];
+                        if (currentBox && currentBox._dayListens) {
+                            showModal(currentBox._dayListens);
+                        }
+                    }
+                }
+            });
+        }
+
+        function jumpToAdjacentMonth(direction, dayBoxes) {
+            const currentBox = dayBoxes[selectedDayIndex];
+            if (!currentBox) return;
+            const currentMonthYear = currentBox.dataset.monthYear;
+
+            let months = [...new Set(dayBoxes.map(b => b.dataset.monthYear))];
+            let currentMonthIdx = months.indexOf(currentMonthYear);
+
+            if (currentMonthIdx !== -1) {
+                let targetMonthIdx = (currentMonthIdx + direction + months.length) % months.length;
+                let targetMonthYear = months[targetMonthIdx];
+
+                let targetBoxIdx = dayBoxes.findIndex(b => b.dataset.monthYear === targetMonthYear);
+                if (targetBoxIdx !== -1) {
+                    selectedDayIndex = targetBoxIdx;
+                    updateSelectedDayVisual();
+                }
+            }
+        }
+
+        function updateSelectedDayVisual() {
+            const dayBoxes = document.querySelectorAll('.day-box');
+            const monthSections = document.querySelectorAll('.month-section');
+
+            const currentBox = dayBoxes[selectedDayIndex];
+            const activeMonthYear = currentBox ? currentBox.dataset.monthYear : null;
+
+            monthSections.forEach(section => {
+                if (isMonthNavigationMode && section.dataset.monthYear === activeMonthYear) {
+                    section.classList.add('month-mode-active');
+                } else {
+                    section.classList.remove('month-mode-active');
+                }
+            });
+
+            dayBoxes.forEach((box, index) => {
+                if (index === selectedDayIndex) {
+                    box.classList.add('keyboard-selected');
+                    box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    box.classList.remove('keyboard-selected');
+                }
+            });
+        }
+
+        function showModal(listens) {
+            const overlay = document.getElementById('modalOverlay');
+            const content = document.getElementById('modalContent');
+            if (!content || !overlay) return;
+            content.innerHTML = '';
+
+            listens.forEach(item => {
+                let parts = item.title.split(' - ');
+                let artist = parts.length > 1 ? parts[0] : "Unknown Artist";
+                let albumTitle = parts.length > 1 ? parts.slice(1).join(' - ') : item.title;
+
+                let ratingData = formatRatingToStars(item.description);
+
+                let albumDiv = document.createElement('div');
+                albumDiv.className = 'modal-album';
+                albumDiv.innerHTML = `
+                    <img src="${item.cover}" alt="${item.title}">
+                    <div class="modal-info">
+                        <h3>${albumTitle}</h3>
+                        <p>${artist} (${item.releaseYear || 'N/A'}) • ${item.listenDate}</p>
+                        <div class="modal-rating-container">
+                            <div class="modal-stars">${ratingData.stars} <span class="modal-text-rating">${ratingData.textLabel}</span></div>
+                        </div>
+                    </div>
+                `;
+                content.appendChild(albumDiv);
+            });
+
+            overlay.classList.add('active');
+        }
+
+        const modalClose = document.getElementById('modalClose');
+        if (modalClose) {
+            modalClose.addEventListener('click', () => {
+                document.getElementById('modalOverlay').classList.remove('active');
+            });
+        }
+
+        const modalOverlay = document.getElementById('modalOverlay');
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target.id === 'modalOverlay') {
+                    e.target.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
