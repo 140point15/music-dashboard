@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Steely Dan - Aja",
+    "slug": "music-logs/steely-dan---aja",
+    "description": "Listen Date: 12/10/2026 | Rating: 5",
+    "listenDate": "12/10/2026",
+    "cover": "https://i.discogs.com/3Pxzvua2yABfdbcOVeiTdXiLvIYxULvquQzSG6Cj-ak/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDIz/MzQtMTMxOTU5NTc4/NC5qcGVn.jpeg",
+    "releaseYear": "1977",
+    "country": "",
+    "label": "",
+    "trackCount": 7,
+    "runtime": ""
+  },
+  {
     "title": "Dream Dolphin - Crystal Moon",
     "slug": "music-logs/dream-dolphin---crystal-moon",
     "description": "Listen Date: 11/10/2026 | Rating: 2.5",
