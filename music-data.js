@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Sugar Plant - Trance Mellow",
+    "slug": "music-logs/sugar-plant---trance-mellow",
+    "description": "Listen Date: 12/10/2026 | Rating: 3",
+    "listenDate": "12/10/2026",
+    "cover": "https://i.discogs.com/vjt5dPRT0nvLFJgCfZjMkVCU1_b3qYYXOcCJJplOE6c/rs:fit/g:sm/q:90/h:602/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNDg0/Ni0xNzQ5NjYyNzM3/LTc4MzMuanBlZw.jpeg",
+    "releaseYear": "1996",
+    "country": "JP",
+    "label": "",
+    "trackCount": 5,
+    "runtime": ""
+  },
+  {
     "title": "Dream Dolphin - Crystal Moon",
     "slug": "music-logs/dream-dolphin---crystal-moon",
     "description": "Listen Date: 11/10/2026 | Rating: 2.5",
