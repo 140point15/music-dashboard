@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Brilliant Colors - Again And Again",
+    "slug": "music-logs/brilliant-colors---again-and-again",
+    "description": "Listen Date: 13/10/2026 | Rating: 3",
+    "listenDate": "13/10/2026",
+    "cover": "https://i.discogs.com/5TAWzUh_XtQ2Jkis1CqOR2Gb_ksaivJx4J4YqkY4HTc/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTcw/MzQtMTYwMTc0NzU5/Ny0xOTg5LmpwZWc.jpeg",
+    "releaseYear": "2011",
+    "country": "",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
     "title": "Sugar Plant - Trance Mellow",
     "slug": "music-logs/sugar-plant---trance-mellow",
     "description": "Listen Date: 12/10/2026 | Rating: 3",
