@@ -60,18 +60,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -81,6 +69,18 @@ window.musicLogs = [
     "country": "US",
     "label": "Warp Records",
     "trackCount": 9,
+    "runtime": ""
+  },
+  {
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
+    "country": "JP",
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
@@ -2952,8 +2952,8 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "長谷川白紙 - 草木萌動",
-    "slug": "music-logs/長谷川白紙---草木萌動",
+    "title": "Hakushi Hasegawa - 草木萌動",
+    "slug": "music-logs/hakushi-hasegawa---草木萌動",
     "description": "Listen Date: 11/02/2026 | Rating: 3.5",
     "listenDate": "11/02/2026",
     "cover": "https://i.discogs.com/ha-qyq-fUKw_3NXkr-BkNz6xXS2DSAqHV8c46CefebM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTc0/OTg1LTE1NDU2Njk3/NjYtODY1My5qcGVn.jpeg",
@@ -2988,8 +2988,8 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "長谷川白紙 - エアにに",
-    "slug": "music-logs/長谷川白紙---エアにに",
+    "title": "Hakushi Hasegawa - エアにに",
+    "slug": "music-logs/hakushi-hasegawa---エアにに",
     "description": "Listen Date: 09/02/2026 | Rating: 3.5",
     "listenDate": "09/02/2026",
     "cover": "https://i.discogs.com/3vcYd6Tpniorq3p1HuxcDIvPZkqvNacJSB6fPJrpXqg/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Mzk0/MTg5LTE1NzM2NDMy/NTUtNzExNC5qcGVn.jpeg",
