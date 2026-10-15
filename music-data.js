@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Linus' Blanket - Show Me Love",
+    "slug": "music-logs/linus'-blanket---show-me-love",
+    "description": "Listen Date: 15/10/2026 | Rating: 3",
+    "listenDate": "15/10/2026",
+    "cover": "https://i.discogs.com/ynCp--KfkvwTVM7JIrRvpD_MeJBXcK-jxPFVAF7jME0/rs:fit/g:sm/q:90/h:521/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MzMy/NjAtMTQ4MDQ5ODMw/My02NjY2LmpwZWc.jpeg",
+    "releaseYear": "2011",
+    "country": "KR",
+    "label": "Fab3 Records",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
     "title": "Takumi Yoneyama - Relaxation Music For Your Computer Life",
     "slug": "music-logs/takumi-yoneyama---relaxation-music-for-your-computer-life",
     "description": "Listen Date: 14/10/2026 | Rating: 4",
