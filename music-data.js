@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "The Avalanches - No Bad Memories",
+    "slug": "music-logs/the-avalanches---no-bad-memories",
+    "description": "Listen Date: 16/10/2026 | Rating: 3",
+    "listenDate": "16/10/2026",
+    "cover": "https://i.discogs.com/Nr13xxIcDYp_bbX5J2SkEfBF9xMJIQanIaKYDE7-rSE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzI3/NjA5LTE3OTIwNjk5/ODAtOTQxNC5qcGVn.jpeg",
+    "releaseYear": "2026",
+    "country": "AU",
+    "label": "",
+    "trackCount": 31,
+    "runtime": ""
+  },
+  {
     "title": "Linus' Blanket - Show Me Love",
     "slug": "music-logs/linus'-blanket---show-me-love",
     "description": "Listen Date: 15/10/2026 | Rating: 3",
@@ -120,18 +132,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Masakatsu Takagi - pia pia",
-    "slug": "music-logs/masakatsu-takagi---pia-pia",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
-    "releaseYear": "2026",
-    "country": "JP",
-    "label": "Carpark Records",
-    "trackCount": 18,
-    "runtime": ""
-  },
-  {
     "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
     "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -141,6 +141,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Music Mine",
     "trackCount": 7,
+    "runtime": ""
+  },
+  {
+    "title": "Masakatsu Takagi - pia pia",
+    "slug": "music-logs/masakatsu-takagi---pia-pia",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "Carpark Records",
+    "trackCount": 18,
     "runtime": ""
   },
   {
