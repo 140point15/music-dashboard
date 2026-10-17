@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "フレネシ - メルヘン",
+    "slug": "music-logs/フレネシ---メルヘン",
+    "description": "Listen Date: 17/10/2026 | Rating: 3.5",
+    "listenDate": "17/10/2026",
+    "cover": "https://i.discogs.com/X6BjAIWygAco0rwLtho1PZ1mtApud_gnPgj2X5C51sA/rs:fit/g:sm/q:90/h:444/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk3NTQw/MTMtMTQ5NzE1NjUz/NS00MzQyLmpwZWc.jpeg",
+    "releaseYear": "2010",
+    "country": "",
+    "label": "乙女音楽研究社",
+    "trackCount": 8,
+    "runtime": ""
+  },
+  {
     "title": "The Avalanches - No Bad Memories",
     "slug": "music-logs/the-avalanches---no-bad-memories",
     "description": "Listen Date: 16/10/2026 | Rating: 3",
@@ -108,18 +120,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -132,15 +132,15 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
-    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
-    "releaseYear": "2020",
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
     "country": "JP",
-    "label": "Music Mine",
-    "trackCount": 7,
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
@@ -153,6 +153,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Carpark Records",
     "trackCount": 18,
+    "runtime": ""
+  },
+  {
+    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
+    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "JP",
+    "label": "Music Mine",
+    "trackCount": 7,
     "runtime": ""
   },
   {
