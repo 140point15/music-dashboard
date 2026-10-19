@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Eureka! - Tennis Girl",
+    "slug": "music-logs/eureka!---tennis-girl",
+    "description": "Listen Date: 19/10/2026 | Rating: 3",
+    "listenDate": "19/10/2026",
+    "cover": "https://i.discogs.com/b-kcsWbLInIHUwG05NkrH4qyB486jS14SJ-1c4zMI40/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMDUx/OTItMTU1MDQwMTQ0/MC05MTI2LmpwZWc.jpeg",
+    "releaseYear": "1999",
+    "country": "",
+    "label": "Cardium Records",
+    "trackCount": 9,
+    "runtime": ""
+  },
+  {
     "title": "James Ferraro - Far Side Virtual",
     "slug": "music-logs/james-ferraro---far-side-virtual",
     "description": "Listen Date: 18/10/2026 | Rating: 3.5",
