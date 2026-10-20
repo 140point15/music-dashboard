@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Hàl - ブルー",
+    "slug": "music-logs/hàl---ブルー",
+    "description": "Listen Date: 20/10/2026 | Rating: 2.5",
+    "listenDate": "20/10/2026",
+    "cover": "https://i.discogs.com/9ztgXZ5mS8L37cqjv5OZ2udvRR_voxemgHlLk0mEVoQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNzQx/NTUzLTE2NDIyMTQ2/MTktOTQyNS5qcGVn.jpeg",
+    "releaseYear": "2001",
+    "country": "",
+    "label": "Invitation",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
     "title": "Eureka! - Tennis Girl",
     "slug": "music-logs/eureka!---tennis-girl",
     "description": "Listen Date: 19/10/2026 | Rating: 3",
