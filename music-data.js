@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Piana - Snow Bird",
+    "slug": "music-logs/piana---snow-bird",
+    "description": "Listen Date: 21/10/2026 | Rating: 4",
+    "listenDate": "21/10/2026",
+    "cover": "https://i.discogs.com/qbGrmHUI-dy_9kdPRvhkODOzlZCghM0_c9icgKdmsl8/rs:fit/g:sm/q:90/h:535/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNzM3/MC0xMjE3MjQ2MTM2/LmpwZWc.jpeg",
+    "releaseYear": "2003",
+    "country": "JP",
+    "label": "",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
     "title": "Hàl - ブルー",
     "slug": "music-logs/hàl---ブルー",
     "description": "Listen Date: 20/10/2026 | Rating: 2.5",
@@ -180,18 +192,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Masakatsu Takagi - pia pia",
-    "slug": "music-logs/masakatsu-takagi---pia-pia",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
-    "releaseYear": "2026",
-    "country": "JP",
-    "label": "Carpark Records",
-    "trackCount": 18,
-    "runtime": ""
-  },
-  {
     "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
     "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -201,6 +201,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Music Mine",
     "trackCount": 7,
+    "runtime": ""
+  },
+  {
+    "title": "Masakatsu Takagi - pia pia",
+    "slug": "music-logs/masakatsu-takagi---pia-pia",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "Carpark Records",
+    "trackCount": 18,
     "runtime": ""
   },
   {
