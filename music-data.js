@@ -1,5 +1,41 @@
 window.musicLogs = [
   {
+    "title": "Handsomeboy Technique = ハンサムボーイ・テクニーク - Adelie Land = アデリー・ランド",
+    "slug": "music-logs/handsomeboy-technique-=-ハンサムボーイ・テクニーク---adelie-land-=-アデリー・ランド",
+    "description": "Listen Date: 24/10/2026 | Rating: 3.5",
+    "listenDate": "24/10/2026",
+    "cover": "https://i.discogs.com/zpSJcu3ovND4Sox8aPFUI8vWSRIyQCzJ1zh0o0I9gf0/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMzY2/My0xNjc4NjMyMjM5/LTM2NDQuanBlZw.jpeg",
+    "releaseYear": "2005",
+    "country": "",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
+    "title": "Omasta - Hits Different",
+    "slug": "music-logs/omasta---hits-different",
+    "description": "Listen Date: 23/10/2026 | Rating: 3.5",
+    "listenDate": "23/10/2026",
+    "cover": "https://i.discogs.com/Ve1xyjf0mcgQPOEfpunuUFl66JcVvZ_dw4-tvu4G9xY/rs:fit/g:sm/q:90/h:561/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4Njg3/MjA1LTE3OTE3MTA1/MTEtMjE5NS5qcGVn.jpeg",
+    "releaseYear": "2026",
+    "country": "PL",
+    "label": "",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
+    "title": "OOIOO - Gold & Green",
+    "slug": "music-logs/ooioo---gold-&-green",
+    "description": "Listen Date: 22/10/2026 | Rating: 4",
+    "listenDate": "22/10/2026",
+    "cover": "https://i.discogs.com/dY-1H49abtDyWOvmoI3MjO2-upNNcBB4VJvGvaJcVjo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTEw/Mi0xNDIxMzU2MTUy/LTYzODYuanBlZw.jpeg",
+    "releaseYear": "2000",
+    "country": "JP",
+    "label": "",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
     "title": "Piana - Snow Bird",
     "slug": "music-logs/piana---snow-bird",
     "description": "Listen Date: 21/10/2026 | Rating: 4",
@@ -192,18 +228,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
-    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
-    "releaseYear": "2020",
-    "country": "JP",
-    "label": "Music Mine",
-    "trackCount": 7,
-    "runtime": ""
-  },
-  {
     "title": "Masakatsu Takagi - pia pia",
     "slug": "music-logs/masakatsu-takagi---pia-pia",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -213,6 +237,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Carpark Records",
     "trackCount": 18,
+    "runtime": ""
+  },
+  {
+    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
+    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "JP",
+    "label": "Music Mine",
+    "trackCount": 7,
     "runtime": ""
   },
   {
