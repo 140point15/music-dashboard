@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Boredoms = ボアダムス - Vision Creation Newsun = ヴィジョン クリエイション ニューサン",
+    "slug": "music-logs/boredoms-=-ボアダムス---vision-creation-newsun-=-ヴィジョン-クリエイション-ニューサン",
+    "description": "Listen Date: 25/10/2026 | Rating: 4.5",
+    "listenDate": "25/10/2026",
+    "cover": "https://i.discogs.com/YKE8qPPzChr2WAuT1su4A7OeSQR8OTRYXiMLQy_NyPs/rs:fit/g:sm/q:90/h:276/w:280/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDE5/MzAtMTM3NzgxNTU2/Ny05OTIwLmpwZWc.jpeg",
+    "releaseYear": "1999",
+    "country": "",
+    "label": "",
+    "trackCount": 9,
+    "runtime": ""
+  },
+  {
     "title": "Handsomeboy Technique = ハンサムボーイ・テクニーク - Adelie Land = アデリー・ランド",
     "slug": "music-logs/handsomeboy-technique-=-ハンサムボーイ・テクニーク---adelie-land-=-アデリー・ランド",
     "description": "Listen Date: 24/10/2026 | Rating: 3.5",
@@ -228,18 +240,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Masakatsu Takagi - pia pia",
-    "slug": "music-logs/masakatsu-takagi---pia-pia",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
-    "releaseYear": "2026",
-    "country": "JP",
-    "label": "Carpark Records",
-    "trackCount": 18,
-    "runtime": ""
-  },
-  {
     "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
     "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -249,6 +249,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Music Mine",
     "trackCount": 7,
+    "runtime": ""
+  },
+  {
+    "title": "Masakatsu Takagi - pia pia",
+    "slug": "music-logs/masakatsu-takagi---pia-pia",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "Carpark Records",
+    "trackCount": 18,
     "runtime": ""
   },
   {
