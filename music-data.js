@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Trooper Salute - 友達がいました",
+    "slug": "music-logs/trooper-salute---友達がいました",
+    "description": "Listen Date: 27/10/2026 | Rating: 2.5",
+    "listenDate": "27/10/2026",
+    "cover": "https://i.discogs.com/5TG1jKOztn5ht_TfUGD8-8d4ooSttvRngbdETXkqXls/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NjUx/NTA2LTE3ODE3MDQ1/NTQtNTQ5NC5qcGVn.jpeg",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "",
+    "trackCount": 13,
+    "runtime": ""
+  },
+  {
     "title": "OOIOO - Feather Float",
     "slug": "music-logs/ooioo---feather-float",
     "description": "Listen Date: 26/10/2026 | Rating: 3",
@@ -228,18 +240,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
-    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
-    "description": "Listen Date: 07/10/2026 | Rating: 3",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
-    "releaseYear": "2000",
-    "country": "US",
-    "label": "Warp Records",
-    "trackCount": 9,
-    "runtime": ""
-  },
-  {
     "title": "磯田健一郎 - プリオシンの浜辺",
     "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
     "description": "Listen Date: 07/10/2026 | Rating: 3.5",
@@ -249,6 +249,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Apollon",
     "trackCount": 4,
+    "runtime": ""
+  },
+  {
+    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
+    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
+    "description": "Listen Date: 07/10/2026 | Rating: 3",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
+    "releaseYear": "2000",
+    "country": "US",
+    "label": "Warp Records",
+    "trackCount": 9,
     "runtime": ""
   },
   {
