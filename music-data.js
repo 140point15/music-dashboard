@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Meaningful Stone - 꿈에서 걸려온 전화 (A Call From My Dream)",
+    "slug": "music-logs/meaningful-stone---꿈에서-걸려온-전화-(a-call-from-my-dream)",
+    "description": "Listen Date: 28/10/2026 | Rating: 3.5",
+    "listenDate": "28/10/2026",
+    "cover": "https://i.discogs.com/v4PNfx5vp5LimJFinggkwg_E5KQUgBG7RG_IorJfPVE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNjAw/NjI1LTE3MzQ1Mzg0/MzUtMjk2NS5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "",
+    "label": "",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
     "title": "Trooper Salute - 友達がいました",
     "slug": "music-logs/trooper-salute---友達がいました",
     "description": "Listen Date: 27/10/2026 | Rating: 2.5",
