@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Yes, Mama OK - 砂のプリン",
+    "slug": "music-logs/yes,-mama-ok---砂のプリン",
+    "description": "Listen Date: 29/10/2026 | Rating: 3",
+    "listenDate": "29/10/2026",
+    "cover": "https://i.discogs.com/P74dEPe5psFplwpSOA_afLPTteHJzlOZjWiUWkIba3s/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MzM3/MTIyLTE2NTExNzcx/NjctNjc0Mi5qcGVn.jpeg",
+    "releaseYear": "1995",
+    "country": "JP",
+    "label": "",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
     "title": "Meaningful Stone - 꿈에서 걸려온 전화 (A Call From My Dream)",
     "slug": "music-logs/meaningful-stone---꿈에서-걸려온-전화-(a-call-from-my-dream)",
     "description": "Listen Date: 28/10/2026 | Rating: 3.5",
@@ -252,18 +264,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -273,6 +273,18 @@ window.musicLogs = [
     "country": "US",
     "label": "Warp Records",
     "trackCount": 9,
+    "runtime": ""
+  },
+  {
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
+    "country": "JP",
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
