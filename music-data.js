@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Toro Y Moi - Mahal",
+    "slug": "music-logs/toro-y-moi---mahal",
+    "description": "Listen Date: 30/10/2026 | Rating: 2",
+    "listenDate": "30/10/2026",
+    "cover": "https://i.discogs.com/Dd_DiOgA8Q8yhP_64YnMCDclFxulBPyp2E3jlmLpb0o/rs:fit/g:sm/q:90/h:607/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMDE3/OTkxLTE2NTA5Nzkw/MTgtMzc0MS5qcGVn.jpeg",
+    "releaseYear": "2022",
+    "country": "",
+    "label": "",
+    "trackCount": 13,
+    "runtime": ""
+  },
+  {
     "title": "Yes, Mama OK - 砂のプリン",
     "slug": "music-logs/yes,-mama-ok---砂のプリン",
     "description": "Listen Date: 29/10/2026 | Rating: 3",
@@ -264,18 +276,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
-    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
-    "description": "Listen Date: 07/10/2026 | Rating: 3",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
-    "releaseYear": "2000",
-    "country": "US",
-    "label": "Warp Records",
-    "trackCount": 9,
-    "runtime": ""
-  },
-  {
     "title": "磯田健一郎 - プリオシンの浜辺",
     "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
     "description": "Listen Date: 07/10/2026 | Rating: 3.5",
@@ -285,6 +285,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Apollon",
     "trackCount": 4,
+    "runtime": ""
+  },
+  {
+    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
+    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
+    "description": "Listen Date: 07/10/2026 | Rating: 3",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
+    "releaseYear": "2000",
+    "country": "US",
+    "label": "Warp Records",
+    "trackCount": 9,
     "runtime": ""
   },
   {
