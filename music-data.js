@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Genevieve Artadi - GVA!!!!!",
+    "slug": "music-logs/genevieve-artadi---gva!!!!!",
+    "description": "Listen Date: 31/10/2026 | Rating: 2",
+    "listenDate": "31/10/2026",
+    "cover": "https://f4.bcbits.com/img/a1920705953_10.jpg",
+    "releaseYear": "2026",
+    "country": "US",
+    "label": "",
+    "trackCount": 15,
+    "runtime": "44:00"
+  },
+  {
     "title": "Toro Y Moi - Mahal",
     "slug": "music-logs/toro-y-moi---mahal",
     "description": "Listen Date: 30/10/2026 | Rating: 2",
