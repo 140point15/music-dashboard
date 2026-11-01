@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Isabelle Antena - En Cavale",
+    "slug": "music-logs/isabelle-antena---en-cavale",
+    "description": "Listen Date: 01/11/2026 | Rating: 3.5",
+    "listenDate": "01/11/2026",
+    "cover": "https://i.discogs.com/TNxoRqUB_91xleTBXHZdO8UXTcAxeURW7Md4Qw12gKk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NDQx/LTE0ODM1NjgwOTct/Njc1Ni5qcGVn.jpeg",
+    "releaseYear": "1986",
+    "country": "FR",
+    "label": "",
+    "trackCount": 9,
+    "runtime": ""
+  },
+  {
     "title": "Genevieve Artadi - GVA!!!!!",
     "slug": "music-logs/genevieve-artadi---gva!!!!!",
     "description": "Listen Date: 31/10/2026 | Rating: 2",
@@ -288,18 +300,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -309,6 +309,18 @@ window.musicLogs = [
     "country": "US",
     "label": "Warp Records",
     "trackCount": 9,
+    "runtime": ""
+  },
+  {
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
+    "country": "JP",
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
