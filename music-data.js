@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "General (10) - The Lights Are Always Less Than The Cigarets",
+    "slug": "music-logs/general-(10)---the-lights-are-always-less-than-the-cigarets",
+    "description": "Listen Date: 03/11/2026 | Rating: 4",
+    "listenDate": "03/11/2026",
+    "cover": "https://i.discogs.com/da_aeM_jjRN25zXc5HrRZgL6CZI8hm215gF1pOvvLZc/rs:fit/g:sm/q:90/h:530/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTQ0/NzY5LTE2Mjk1NzEx/MDktOTYzNC5qcGVn.jpeg",
+    "releaseYear": "2000",
+    "country": "GB",
+    "label": "Hot-Cha Records",
+    "trackCount": 21,
+    "runtime": ""
+  },
+  {
     "title": "Inner Science - Elegant Confections",
     "slug": "music-logs/inner-science---elegant-confections",
     "description": "Listen Date: 02/11/2026 | Rating: 3",
