@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Spoochy - Spoochy",
+    "slug": "music-logs/spoochy---spoochy",
+    "description": "Listen Date: 04/11/2026 | Rating: 4",
+    "listenDate": "04/11/2026",
+    "cover": "https://i.discogs.com/CMW_7y1fSErnWDJ4N_9VRnpRYXeMEwr9G_zIjkLWXnY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjY5/NzY1LTE3ODIxNjkw/NDUtMzA5Ni5qcGVn.jpeg",
+    "releaseYear": "1999",
+    "country": "JP",
+    "label": "",
+    "trackCount": 9,
+    "runtime": ""
+  },
+  {
     "title": "General (10) - The Lights Are Always Less Than The Cigarets",
     "slug": "music-logs/general-(10)---the-lights-are-always-less-than-the-cigarets",
     "description": "Listen Date: 03/11/2026 | Rating: 4",
@@ -324,18 +336,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -345,6 +345,18 @@ window.musicLogs = [
     "country": "US",
     "label": "Warp Records",
     "trackCount": 9,
+    "runtime": ""
+  },
+  {
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
+    "country": "JP",
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
