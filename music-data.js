@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Lullatone - Little Songs About Raindrops",
+    "slug": "music-logs/lullatone---little-songs-about-raindrops",
+    "description": "Listen Date: 06/11/2026 | Rating: 3",
+    "listenDate": "06/11/2026",
+    "cover": "https://i.discogs.com/WxKo3epZCCoHrXrBklKG71Yl6dF5t8kpyock1uRQwZY/rs:fit/g:sm/q:90/h:591/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5OTgx/OC0xMzg4NjI4OTU1/LTE5NDQuanBlZw.jpeg",
+    "releaseYear": "2004",
+    "country": "JP",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
     "title": "Bamboo Data - Tone Of Water, Colors Of J-Sky",
     "slug": "music-logs/bamboo-data---tone-of-water,-colors-of-j-sky",
     "description": "Listen Date: 05/11/2026 | Rating: 3.5",
