@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Bamboo Data - Tone Of Water, Colors Of J-Sky",
+    "slug": "music-logs/bamboo-data---tone-of-water,-colors-of-j-sky",
+    "description": "Listen Date: 05/11/2026 | Rating: 3.5",
+    "listenDate": "05/11/2026",
+    "cover": "https://i.discogs.com/_m_NnbBn5H1oqsMCdXk41LmUSeRSO5h1XWJSJOG1tK0/rs:fit/g:sm/q:90/h:459/w:472/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMTAz/MzctMTM5MDIzMDM4/My03MTE5LmpwZWc.jpeg",
+    "releaseYear": "2000",
+    "country": "JP",
+    "label": "Bitpool",
+    "trackCount": 6,
+    "runtime": ""
+  },
+  {
     "title": "Spoochy - Spoochy",
     "slug": "music-logs/spoochy---spoochy",
     "description": "Listen Date: 04/11/2026 | Rating: 4",
@@ -336,18 +348,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
-    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
-    "description": "Listen Date: 07/10/2026 | Rating: 3",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
-    "releaseYear": "2000",
-    "country": "US",
-    "label": "Warp Records",
-    "trackCount": 9,
-    "runtime": ""
-  },
-  {
     "title": "磯田健一郎 - プリオシンの浜辺",
     "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
     "description": "Listen Date: 07/10/2026 | Rating: 3.5",
@@ -357,6 +357,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Apollon",
     "trackCount": 4,
+    "runtime": ""
+  },
+  {
+    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
+    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
+    "description": "Listen Date: 07/10/2026 | Rating: 3",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
+    "releaseYear": "2000",
+    "country": "US",
+    "label": "Warp Records",
+    "trackCount": 9,
     "runtime": ""
   },
   {
