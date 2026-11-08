@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Twisted Teens - The Holy Cross Tigers",
+    "slug": "music-logs/twisted-teens---the-holy-cross-tigers",
+    "description": "Listen Date: 08/11/2026 | Rating: 3.5",
+    "listenDate": "08/11/2026",
+    "cover": "https://i.discogs.com/hXdFk-xyPPHMXpWd1-Di8HaXS-utRnxjqGsrSG9gjy8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTAz/MDg1LTE3OTM1NDc3/MjAtMjY3OC5qcGVn.jpeg",
+    "releaseYear": "2026",
+    "country": "",
+    "label": "",
+    "trackCount": 13,
+    "runtime": ""
+  },
+  {
     "title": "aus - Lang",
     "slug": "music-logs/aus---lang",
     "description": "Listen Date: 07/11/2026 | Rating: 4",
@@ -396,18 +408,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
-    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
-    "releaseYear": "2020",
-    "country": "JP",
-    "label": "Music Mine",
-    "trackCount": 7,
-    "runtime": ""
-  },
-  {
     "title": "Masakatsu Takagi - pia pia",
     "slug": "music-logs/masakatsu-takagi---pia-pia",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -417,6 +417,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Carpark Records",
     "trackCount": 18,
+    "runtime": ""
+  },
+  {
+    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
+    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "JP",
+    "label": "Music Mine",
+    "trackCount": 7,
     "runtime": ""
   },
   {
