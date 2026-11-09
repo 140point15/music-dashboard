@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Hexstatic - Master-View",
+    "slug": "music-logs/hexstatic---master-view",
+    "description": "Listen Date: 09/11/2026 | Rating: 2.5",
+    "listenDate": "09/11/2026",
+    "cover": "https://i.discogs.com/lU-MCMG_4RaTF-JTqiR6ukEzYH47dDBe5pTKWjb8fTQ/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NTA5/OS0xMDk5NzYzMzU3/LmpwZw.jpeg",
+    "releaseYear": "2004",
+    "country": "GB",
+    "label": "",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
     "title": "Twisted Teens - The Holy Cross Tigers",
     "slug": "music-logs/twisted-teens---the-holy-cross-tigers",
     "description": "Listen Date: 08/11/2026 | Rating: 3.5",
@@ -384,18 +396,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
-    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
-    "description": "Listen Date: 07/10/2026 | Rating: 3",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
-    "releaseYear": "2000",
-    "country": "US",
-    "label": "Warp Records",
-    "trackCount": 9,
-    "runtime": ""
-  },
-  {
     "title": "磯田健一郎 - プリオシンの浜辺",
     "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
     "description": "Listen Date: 07/10/2026 | Rating: 3.5",
@@ -405,6 +405,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Apollon",
     "trackCount": 4,
+    "runtime": ""
+  },
+  {
+    "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
+    "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
+    "description": "Listen Date: 07/10/2026 | Rating: 3",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/Pd4LEMCfSqYUbAG-l0Zuo48b7U0F3LMcYuOgXTn4EbM/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjM5/LTE1NTY4MjM5ODUt/NTYwNi5qcGVn.jpeg",
+    "releaseYear": "2000",
+    "country": "US",
+    "label": "Warp Records",
+    "trackCount": 9,
     "runtime": ""
   },
   {
