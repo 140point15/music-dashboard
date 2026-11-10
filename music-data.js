@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Dolly Mixture - Demonstration Tapes",
+    "slug": "music-logs/dolly-mixture---demonstration-tapes",
+    "description": "Listen Date: 10/11/2026 | Rating: 3.5",
+    "listenDate": "10/11/2026",
+    "cover": "https://i.discogs.com/BgN8Rk-XwNhMdaH1_-ffu4jA7mtmjsysTxNrYbHZ1B8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MjY4/NS0xMTY5MTYyNjQy/LmpwZWc.jpeg",
+    "releaseYear": "1983",
+    "country": "GB",
+    "label": "",
+    "trackCount": 31,
+    "runtime": ""
+  },
+  {
     "title": "Hexstatic - Master-View",
     "slug": "music-logs/hexstatic---master-view",
     "description": "Listen Date: 09/11/2026 | Rating: 2.5",
