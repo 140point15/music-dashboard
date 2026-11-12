@@ -1,5 +1,29 @@
 window.musicLogs = [
   {
+    "title": "The Rest Of Life - Home Made Hell",
+    "slug": "music-logs/the-rest-of-life---home-made-hell",
+    "description": "Listen Date: 12/11/2026 | Rating: 2.5",
+    "listenDate": "12/11/2026",
+    "cover": "https://i.discogs.com/Z23DvWAC3i2GUiOo7g-wqmyxQnd3wsPjo6O8EbofNpw/rs:fit/g:sm/q:90/h:352/w:348/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NTUy/MTMtMTQ2ODA3Mjg0/Ny02MDA5LmpwZWc.jpeg",
+    "releaseYear": "2000",
+    "country": "",
+    "label": "Hot-Cha Records",
+    "trackCount": 2,
+    "runtime": ""
+  },
+  {
+    "title": "The Shaggs - Philosophy Of The World",
+    "slug": "music-logs/the-shaggs---philosophy-of-the-world",
+    "description": "Listen Date: 11/11/2026 | Rating: 4",
+    "listenDate": "11/11/2026",
+    "cover": "https://i.discogs.com/Ot5xqR1z3TEROmm5WmuKqOZpF9CfVA43H_Wp6qjRuAw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjUz/MDQtMTQ3OTczNDk2/NS0yNTA0LmpwZWc.jpeg",
+    "releaseYear": "1969",
+    "country": "US",
+    "label": "",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
     "title": "Dolly Mixture - Demonstration Tapes",
     "slug": "music-logs/dolly-mixture---demonstration-tapes",
     "description": "Listen Date: 10/11/2026 | Rating: 3.5",
