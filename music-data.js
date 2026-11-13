@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "COCA (6) - Pulse",
+    "slug": "music-logs/coca-(6)---pulse",
+    "description": "Listen Date: 13/11/2026 | Rating: 4",
+    "listenDate": "13/11/2026",
+    "cover": "https://i.discogs.com/X7KMzhGIjNI_d4AV0mf2QigPIGtdHpXeQbhPyCKkyfw/rs:fit/g:sm/q:90/h:523/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTU0/NzUwLTE2MDA4NjE2/NzEtNDU1Ny5qcGVn.jpeg",
+    "releaseYear": "1999",
+    "country": "",
+    "label": "Happy Go Lucky (2)",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
     "title": "The Rest Of Life - Home Made Hell",
     "slug": "music-logs/the-rest-of-life---home-made-hell",
     "description": "Listen Date: 12/11/2026 | Rating: 2.5",
