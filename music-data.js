@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "pomodorosa - Isotope",
+    "slug": "music-logs/pomodorosa---isotope",
+    "description": "Listen Date: 14/11/2026 | Rating: 1.5",
+    "listenDate": "14/11/2026",
+    "cover": "https://f4.bcbits.com/img/a3667332552_16.jpg",
+    "releaseYear": "2023",
+    "country": "JP",
+    "label": "",
+    "trackCount": 13,
+    "runtime": ""
+  },
+  {
     "title": "COCA (6) - Pulse",
     "slug": "music-logs/coca-(6)---pulse",
     "description": "Listen Date: 13/11/2026 | Rating: 4",
@@ -444,18 +456,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "磯田健一郎 - プリオシンの浜辺",
-    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
-    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
-    "listenDate": "07/10/2026",
-    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
-    "releaseYear": "1990",
-    "country": "JP",
-    "label": "Apollon",
-    "trackCount": 4,
-    "runtime": ""
-  },
-  {
     "title": "Savath+Savalas - Folk Songs For Trains, Trees And Honey",
     "slug": "music-logs/savath+savalas---folk-songs-for-trains,-trees-and-honey",
     "description": "Listen Date: 07/10/2026 | Rating: 3",
@@ -468,15 +468,15 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Masakatsu Takagi - pia pia",
-    "slug": "music-logs/masakatsu-takagi---pia-pia",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
-    "releaseYear": "2026",
+    "title": "磯田健一郎 - プリオシンの浜辺",
+    "slug": "music-logs/磯田健一郎---プリオシンの浜辺",
+    "description": "Listen Date: 07/10/2026 | Rating: 3.5",
+    "listenDate": "07/10/2026",
+    "cover": "https://i.discogs.com/YS2c9ZMZQWoNDc-MFYCKN1D3cxwI-2y8Pc3lOLlvnfQ/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTI3/OTc3LTE1MzMxMDUx/OTEtODg3OC5qcGVn.jpeg",
+    "releaseYear": "1990",
     "country": "JP",
-    "label": "Carpark Records",
-    "trackCount": 18,
+    "label": "Apollon",
+    "trackCount": 4,
     "runtime": ""
   },
   {
@@ -489,6 +489,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Music Mine",
     "trackCount": 7,
+    "runtime": ""
+  },
+  {
+    "title": "Masakatsu Takagi - pia pia",
+    "slug": "music-logs/masakatsu-takagi---pia-pia",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "Carpark Records",
+    "trackCount": 18,
     "runtime": ""
   },
   {
