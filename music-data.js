@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "Babi (4) - Botanical",
+    "slug": "music-logs/babi-(4)---botanical",
+    "description": "Listen Date: 15/11/2026 | Rating: 3.5",
+    "listenDate": "15/11/2026",
+    "cover": "https://i.discogs.com/Pw7QpLQ66ZPe8GyPWanLqzb0sB_H_7LubK56e691pW8/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MzU5/ODctMTQwNzAwNTY5/OS00Mzc1LmpwZWc.jpeg",
+    "releaseYear": "2013",
+    "country": "",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
     "title": "pomodorosa - Isotope",
     "slug": "music-logs/pomodorosa---isotope",
     "description": "Listen Date: 14/11/2026 | Rating: 1.5",
@@ -480,18 +492,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
-    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
-    "releaseYear": "2020",
-    "country": "JP",
-    "label": "Music Mine",
-    "trackCount": 7,
-    "runtime": ""
-  },
-  {
     "title": "Masakatsu Takagi - pia pia",
     "slug": "music-logs/masakatsu-takagi---pia-pia",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -501,6 +501,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Carpark Records",
     "trackCount": 18,
+    "runtime": ""
+  },
+  {
+    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
+    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "JP",
+    "label": "Music Mine",
+    "trackCount": 7,
     "runtime": ""
   },
   {
