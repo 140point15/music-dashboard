@@ -1,5 +1,29 @@
 window.musicLogs = [
   {
+    "title": "Speedometer. - Private",
+    "slug": "music-logs/speedometer.---private",
+    "description": "Listen Date: 18/11/2026 | Rating: 3.5",
+    "listenDate": "18/11/2026",
+    "cover": "https://i.discogs.com/VZ9rAEcDGmuddwb-PvNAcOCOr9bKgO7FaWadr52w8tc/rs:fit/g:sm/q:90/h:527/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMzY1/NzQtMTc4MjM1NjM1/NS0xOTQ0LnBuZw.jpeg",
+    "releaseYear": "2000",
+    "country": "",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
+    "title": "Hirotaka Shimizu - 風のゆくえ～Blow Wind～",
+    "slug": "music-logs/hirotaka-shimizu---風のゆくえ～blow-wind～",
+    "description": "Listen Date: 17/11/2026 | Rating: 3",
+    "listenDate": "17/11/2026",
+    "cover": "https://i.discogs.com/o0hCx2_GlFnstOeQIJy6Lg6cJhGktP2bdjr0fJ7yUI0/rs:fit/g:sm/q:90/h:320/w:318/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTU5/NTUxLTE2MjY3Nzky/OTYtNTk1Ny5qcGVn.jpeg",
+    "releaseYear": "1997",
+    "country": "JP",
+    "label": "Universal",
+    "trackCount": 11,
+    "runtime": ""
+  },
+  {
     "title": "Neil & Iraiza - Johnny Marr",
     "slug": "music-logs/neil-&-iraiza---johnny-marr",
     "description": "Listen Date: 16/11/2026 | Rating: 3",
@@ -504,18 +528,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Masakatsu Takagi - pia pia",
-    "slug": "music-logs/masakatsu-takagi---pia-pia",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
-    "releaseYear": "2026",
-    "country": "JP",
-    "label": "Carpark Records",
-    "trackCount": 18,
-    "runtime": ""
-  },
-  {
     "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
     "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -525,6 +537,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Music Mine",
     "trackCount": 7,
+    "runtime": ""
+  },
+  {
+    "title": "Masakatsu Takagi - pia pia",
+    "slug": "music-logs/masakatsu-takagi---pia-pia",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4jpI65V8CCFQ6tHBBrIVKrU5oGAM3wqqeghaU-vI5Df4k_05MGHYTiQ&s=10",
+    "releaseYear": "2026",
+    "country": "JP",
+    "label": "Carpark Records",
+    "trackCount": 18,
     "runtime": ""
   },
   {
