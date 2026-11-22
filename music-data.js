@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "にせんねんもんだい - ろくおん",
+    "slug": "music-logs/にせんねんもんだい---ろくおん",
+    "description": "Listen Date: 22/11/2026 | Rating: 3.5",
+    "listenDate": "22/11/2026",
+    "cover": "https://i.discogs.com/RtlELWYy-d4rtjJrxDNRmfcDOlXrKpXlJV_h9EiMm-I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MjAx/MDctMTY3NTc2MDU1/OS03OTg5LmpwZWc.jpeg",
+    "releaseYear": "2006",
+    "country": "",
+    "label": "Bijin Record",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
     "title": "Knats - A Great Day In Newcastle",
     "slug": "music-logs/knats---a-great-day-in-newcastle",
     "description": "Listen Date: 21/11/2026 | Rating: 3",
