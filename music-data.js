@@ -1,5 +1,41 @@
 window.musicLogs = [
   {
+    "title": "Knats - A Great Day In Newcastle",
+    "slug": "music-logs/knats---a-great-day-in-newcastle",
+    "description": "Listen Date: 21/11/2026 | Rating: 3",
+    "listenDate": "21/11/2026",
+    "cover": "https://i.discogs.com/ESLhyMjhJSMDsAPcmd5ekW5RCNIFRYkWtE-Aa2bn_2k/rs:fit/g:sm/q:90/h:560/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MjI4/MTc2LTE3Nzc2ODMw/MDMtODgzOS5wbmc.jpeg",
+    "releaseYear": "2026",
+    "country": "",
+    "label": "",
+    "trackCount": 9,
+    "runtime": ""
+  },
+  {
+    "title": "Hiroshi Yoshimura - Quiet Forest",
+    "slug": "music-logs/hiroshi-yoshimura---quiet-forest",
+    "description": "Listen Date: 20/11/2026 | Rating: 4",
+    "listenDate": "20/11/2026",
+    "cover": "https://i.discogs.com/jz9e5sDLuVD8zfL9bQslv8TCv0mhI8kyouWy8tH-j60/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Mzg3/NDEtMTc5MDk4MTUw/MS03MTQwLmpwZWc.jpeg",
+    "releaseYear": "1996",
+    "country": "JP",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
+    "title": "にせんねんもんだい - トリ = Tori",
+    "slug": "music-logs/にせんねんもんだい---トリ-=-tori",
+    "description": "Listen Date: 19/11/2026 | Rating: 3.5",
+    "listenDate": "19/11/2026",
+    "cover": "https://i.discogs.com/SIkge9BEDYafWMw8tHX8ReHcPW67RsekzUfi9EZGPVU/rs:fit/g:sm/q:90/h:525/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzAx/MDQtMTQyNTQ1ODc5/MC0yMTAwLmpwZWc.jpeg",
+    "releaseYear": "2005",
+    "country": "",
+    "label": "",
+    "trackCount": 4,
+    "runtime": ""
+  },
+  {
     "title": "Speedometer. - Private",
     "slug": "music-logs/speedometer.---private",
     "description": "Listen Date: 18/11/2026 | Rating: 3.5",
@@ -528,18 +564,6 @@ window.musicLogs = [
     "runtime": ""
   },
   {
-    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
-    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
-    "description": "Listen Date: 06/10/2026 | Rating: 3",
-    "listenDate": "06/10/2026",
-    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
-    "releaseYear": "2020",
-    "country": "JP",
-    "label": "Music Mine",
-    "trackCount": 7,
-    "runtime": ""
-  },
-  {
     "title": "Masakatsu Takagi - pia pia",
     "slug": "music-logs/masakatsu-takagi---pia-pia",
     "description": "Listen Date: 06/10/2026 | Rating: 3",
@@ -549,6 +573,18 @@ window.musicLogs = [
     "country": "JP",
     "label": "Carpark Records",
     "trackCount": 18,
+    "runtime": ""
+  },
+  {
+    "title": "Hakushi Hasegawa - 夢の骨が襲いかかる！",
+    "slug": "music-logs/hakushi-hasegawa---夢の骨が襲いかかる！",
+    "description": "Listen Date: 06/10/2026 | Rating: 3",
+    "listenDate": "06/10/2026",
+    "cover": "https://i.discogs.com/aai851eq3tJMtrp-w2JwXzBmZYwrBFE-KztuBl9Rtt0/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTQx/OTU4LTE2NzY4MzE5/OTUtNjY4MC5qcGVn.jpeg",
+    "releaseYear": "2020",
+    "country": "JP",
+    "label": "Music Mine",
+    "trackCount": 7,
     "runtime": ""
   },
   {
