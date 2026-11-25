@@ -1,5 +1,41 @@
 window.musicLogs = [
   {
+    "title": "실리카겔 - 실리카겔",
+    "slug": "music-logs/실리카겔---실리카겔",
+    "description": "Listen Date: 25/11/2026 | Rating: 3.5",
+    "listenDate": "25/11/2026",
+    "cover": "https://i.discogs.com/xr0q2FZBAovyIsnOlJRu8RIlSuMQaXuUzqySxySPLtI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNTg2/MjEzLTE3NDY5NjU4/NzgtMTk4MS5qcGVn.jpeg",
+    "releaseYear": "2016",
+    "country": "KR",
+    "label": "",
+    "trackCount": 13,
+    "runtime": ""
+  },
+  {
+    "title": "Special Friend - Clipping",
+    "slug": "music-logs/special-friend---clipping",
+    "description": "Listen Date: 24/11/2026 | Rating: 2.5",
+    "listenDate": "24/11/2026",
+    "cover": "https://i.discogs.com/Nd5EvRwkFaD_0yAgbzhBqY7cIFmd7v4bV22LmLKTWeE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MDAw/NTQ4LTE3NzY4NTIw/NDYtMzMwNi5qcGVn.jpeg",
+    "releaseYear": "2026",
+    "country": "",
+    "label": "",
+    "trackCount": 12,
+    "runtime": ""
+  },
+  {
+    "title": "Steve Lacy (4) - Gemini Rights",
+    "slug": "music-logs/steve-lacy-(4)---gemini-rights",
+    "description": "Listen Date: 23/11/2026 | Rating: 3.5",
+    "listenDate": "23/11/2026",
+    "cover": "https://i.discogs.com/c2JtRpc-nUucAG-rRVLgxMtGOWxQZ89cl8tzBBdn20s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzODg5/MjAzLTE2NTc4NjEz/MzMtODc2OS5qcGVn.jpeg",
+    "releaseYear": "2022",
+    "country": "",
+    "label": "",
+    "trackCount": 10,
+    "runtime": ""
+  },
+  {
     "title": "にせんねんもんだい - ろくおん",
     "slug": "music-logs/にせんねんもんだい---ろくおん",
     "description": "Listen Date: 22/11/2026 | Rating: 3.5",
