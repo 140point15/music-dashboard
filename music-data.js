@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "少年ナイフ = Shonen Knife - 712",
+    "slug": "music-logs/少年ナイフ-=-shonen-knife---712",
+    "description": "Listen Date: 27/11/2026 | Rating: 4",
+    "listenDate": "27/11/2026",
+    "cover": "https://i.discogs.com/jh6VB7y4UPFcHDzp4bthDR8ogNLowQPsW7RrpYOhSz8/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTE2/MjQtMTM1NjI0Mjkz/NC04NTUwLmpwZWc.jpeg",
+    "releaseYear": "1991",
+    "country": "",
+    "label": "",
+    "trackCount": 4,
+    "runtime": ""
+  },
+  {
     "title": "やくしまるえつこ - ヤミヤミ・ロンリープラネット",
     "slug": "music-logs/やくしまるえつこ---ヤミヤミ・ロンリープラネット",
     "description": "Listen Date: 26/11/2026 | Rating: 2",
