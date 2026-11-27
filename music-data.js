@@ -1,5 +1,17 @@
 window.musicLogs = [
   {
+    "title": "やくしまるえつこ - ヤミヤミ・ロンリープラネット",
+    "slug": "music-logs/やくしまるえつこ---ヤミヤミ・ロンリープラネット",
+    "description": "Listen Date: 26/11/2026 | Rating: 2",
+    "listenDate": "26/11/2026",
+    "cover": "https://i.discogs.com/v95o8f4O037tJgY6jen6DFKUXwvwLcNUjaVML-m9Rgk/rs:fit/g:sm/q:90/h:224/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NjMz/OTQ4LTE2MjczMjEy/MDktNDE3Ny5qcGVn.jpeg",
+    "releaseYear": "2012",
+    "country": "JP",
+    "label": "",
+    "trackCount": 5,
+    "runtime": ""
+  },
+  {
     "title": "실리카겔 - 실리카겔",
     "slug": "music-logs/실리카겔---실리카겔",
     "description": "Listen Date: 25/11/2026 | Rating: 3.5",
